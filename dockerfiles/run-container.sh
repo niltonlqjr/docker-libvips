@@ -20,6 +20,7 @@ then
     RUN_CMD="run"
     CONTAINER_RUN_ARGS="-it --rm --name ${CONTAINER_NAME} "
     VOLUME_ARG="--volume ${HOME}:/home/${CONTAINER_USER}/host"
+    VOLUME_ARG=${VOLUME_ARG}" --volume /mnt:/mnt"
     COMMAND_TO_EXEC=""
     CONTAINER=$CONTAINER_IMAGE
 
